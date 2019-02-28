@@ -1,4 +1,4 @@
-# Projet INFRA - GROUPE N°07
+# Projet WEB - GROUPE N°07
 
 Membres : <br />
 &nbsp;&nbsp;GRELET Théo <br />
