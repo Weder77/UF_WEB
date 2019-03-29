@@ -1,0 +1,541 @@
+/* ACCUEIL */
+#accueil
+{
+	display: flex;
+	justify-content: space-around;
+	min-height: 93vh;
+	background-image: url("../images/bg-accueil.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	box-shadow:inset 0 0 0 20000px rgba(192,192,192, 0.5);
+}
+
+#accueil-pres
+{
+	font-family: 'Work sans', sans-serif;
+	font-size: 8vh;
+	color: black;
+	font-weight: 600;
+	border: 8px solid black;
+	padding: 1%;
+}
+
+#accueil-pres .statut
+{
+	font-size: 70%;
+	font-weight: normal;
+}
+
+#accueil-pres .name
+{
+	padding-bottom: 4px;
+	border-bottom: black 4px solid;
+}
+
+/* A PROPOS DE MOI */
+
+#a-propos
+{
+	margin: 0% 10% 15px 10%;
+}
+
+#a-propos h2
+{
+	border-top: none;
+}
+
+#presentation
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#presentation .pres-txt
+{
+	width: 60%;
+}
+
+#presentation .infos-importantes
+{
+	font-weight: 900;
+}
+
+#presentation img
+{
+	width: 25%;
+}
+
+/* COMPETENCES */
+#competences
+{
+	margin: 0% 10% 0% 10%;
+}
+
+#competences article
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.comp
+{
+	margin: 30px 4% 0% 4%;
+}
+
+.skills
+{
+	display: flex;
+	align-items: flex-end;
+}
+
+.nom-comp
+{
+	color: #404040;
+}
+
+.barre-prog
+{
+	width: 500px;
+	height: 5px;
+	border: 1px LightGray solid;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.barre-prog .progression
+{
+	height: 100%;
+}
+
+@keyframes progression
+{
+	0%
+	{
+		width: 0%;
+	}
+
+	100%
+	{
+		width: 100%;
+	}
+}
+
+#prog-1
+{
+	width: 60%;
+}
+
+#prog-2
+{
+	width: 20%;
+}
+
+#prog-3
+{
+	width: 90%;
+}
+
+#prog-4
+{
+	width: 30%;
+}
+
+#prog-5
+{
+	width: 60%;
+}
+
+#prog-6
+{
+	width:75%;
+}
+
+.prog-anim
+{
+	height: 100%;
+	background-color: #00cc66;
+	animation: progression 1s;
+}
+
+.pourcentage
+{
+	color: #00cc66;
+	font-size: 110%;
+	font-weight: 600;
+	margin-left: 15px;
+}
+
+/* FORMATIONS */
+#formations
+{
+	margin: 0% 10% 0% 10%;
+}
+
+#formations h4
+{
+	font-weight: 400;
+	margin: 4px 0;
+}
+
+#formations ul
+{
+	list-style: none;
+}
+
+#formations li:before
+{
+	content: '\2022';
+	color: #00cc66;
+	display: inline-block;
+	width: 1em; 
+}
+
+#formations li
+{
+	margin:2px 10%;
+}
+
+#formations p
+{
+	font-size: 95%;
+}
+
+#formations .color
+{
+	color: #00cc66;
+}
+
+/* REALISATIONS */
+#realisations
+{
+	margin: 0px 10% 0% 10%;
+}
+
+#realisations section
+{
+	padding-top: 0px;
+}
+
+#realisations article
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.rea
+{
+	width: 30vh;
+	min-width: 200px;
+	height: 30vh;
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.rea-description
+{
+	display: none;
+	text-align: center;
+}
+
+.rea h4
+{
+	font-size: 180%;
+}
+
+#rea-1
+{
+	background-image: url("../images/rea-1.jpg");
+	background-position: center;
+	background-size: 150%;
+	background-repeat: no-repeat;
+}
+
+#rea-2
+{
+	background-image: url("../images/rea-2.jpg");
+	background-position: center;
+	background-size: 150%;
+	background-repeat: no-repeat;
+}
+
+#rea-3
+{
+	background-image: url("../images/rea-3.jpg");
+	background-position: center;
+	background-size: 150%;
+	background-repeat: no-repeat;
+}
+
+.rea:hover
+{
+	box-shadow:inset 0 0 0 20000px rgba(192,192,192, 0.5);
+	transition: box-shadow 0.1s linear;
+}
+
+.rea:hover h4
+{
+	transform: translateY(-120%);
+	transition: transform 0.1s linear;
+	transition-delay: 0.1s;
+}
+
+.rea:hover .rea-description
+{
+	display: flex;
+}
+
+/* CONTACTS */
+#contacts
+{
+	margin: 50px 10% 0% 10%;
+}
+
+#contacts article
+{
+	margin-top: 2%;
+	display: flex;
+	justify-content: center;
+}
+
+#cont-left
+{
+	text-align: center;
+	width: 40%;
+}
+
+#cont-left form
+{
+	padding-right: 5%;
+}
+
+#cont-right
+{
+	font-size: 120%;
+	width: 30%;
+	padding-left: 4%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#contacts input, #contacts textarea
+{
+	font-size: 110%;
+}
+
+#contacts input
+{
+	background-color: #f2f2f2;
+	border: none;
+	border-bottom: 1px grey solid;
+	margin-top:3%; 
+}
+
+#contacts textarea
+{
+	background-color: #f2f2f2;
+	border: 1px grey solid;
+	border-radius: 10px;
+	margin-top:4%;
+	resize: none;
+	width: 90%;
+	height: 250px;
+	margin-bottom: 1%;
+}
+
+#form-name
+{
+	margin-right: 2%;
+}
+
+#contacts .inp-1
+{
+	width: 90%;
+}
+
+#contacts .inp-2
+{
+	width: 44%;
+}
+
+#contacts button
+{
+	color: white;
+	font-size: 120%;
+	width: 90%;
+	padding: 10px 0;
+	background-color: #00cc66;
+	border:#00cc66 1px solid;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 2%;
+	opacity: 0.8;
+}
+
+#contacts button:hover
+{
+	opacity: 1;
+	cursor: pointer;
+}
+
+#cont-right .name
+{
+	font-size: 150%;
+	font-weight: 600;
+}
+
+#cont-right #contact-statut
+{
+	font-size: 110%;
+	color: #505050;
+	font-weight: 300;
+}
+
+#cont-right img
+{
+	width: 15px;
+}
+
+#cont-right a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#cont-right a:hover
+{
+	color: grey;
+	border-bottom: 1px grey solid;
+}
+
+#dl-cv
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#dl-cv button
+{
+	padding: 2vh;
+
+	border: lightgrey solid 0.4vh;
+	border-radius: 10px;
+	color: lightgrey;
+
+	cursor: pointer;
+}
+
+#dl-cv button:hover
+{
+	border-color: grey;
+	color: grey;
+
+	transition: border-color 0.3s linear,
+				color 0.3s linear;
+}
+
+/* TABLETTE, TELEPHONE */
+@media screen and (max-width: 899px)
+{
+	#accueil
+	{
+		height: 100vh;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	#a-propos
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#presentation
+	{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		width: 90vw;
+	}
+
+	#presentation .pres-txt
+	{
+		width: 90%;
+		margin-top: 2vh;
+		text-align: center;
+	}
+
+	#presentation img
+	{
+		width: 80vw;
+	}
+
+	#competences .comp
+	{
+		width: 80vw;
+	}
+
+	#competences .nom-comp
+	{
+		font-size: 130%;
+	}
+
+	#realisations article
+	{
+		flex-wrap: wrap;
+	}
+	
+	.rea
+	{
+		margin-bottom: 2vh;
+		box-shadow:inset 0 0 0 20000px rgba(192,192,192, 0.5);
+	}
+
+	.rea h4
+	{
+		transform: translateY(-120%);
+	}
+
+	.rea-description
+	{
+		display: inline;
+	}
+
+	#contacts article
+	{
+		width: 100%;
+		flex-direction: column-reverse;
+	}
+
+	#cont-right
+	{
+		width: 100%;
+	}
+
+	#cont-right div
+	{
+		margin-bottom: 2vh;
+	}
+
+	#cont-left
+	{
+		width: 100%;
+	}
+}

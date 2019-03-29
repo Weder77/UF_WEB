@@ -1,0 +1,15 @@
+section
+{
+	text-align: center;
+}
+
+input, button
+{
+	margin-top: 1%;
+	font-size: 1.2em;
+}
+
+button
+{
+	padding: 0.5%;
+}

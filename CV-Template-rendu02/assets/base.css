@@ -1,0 +1,204 @@
+/* BASE */
+*
+{
+	margin:0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+	background-color: #f2f2f2;
+}
+
+h2
+{
+	color:#505050;
+	font-weight: 700;
+	font-size: 150%;
+	text-align: center;
+	margin: 0 0 5% ;
+	padding:25px 0px 25px 0px; 
+	width: 100%;
+	border-top: 1px #E2E2E2 solid;
+	border-bottom: 1px #E2E2E2 solid;
+}
+
+p
+{
+	font-size:130%;
+}
+
+section:not(#accueil)
+{
+	padding-top:3.5%;
+}
+
+/* HEADER */
+header a:hover
+	{
+		color: #00cc66;
+	}
+
+/* FOOTER */
+footer
+{
+	margin-top: 6%;
+	height: 80px;
+	width: 100%;
+	color: #BEBEBE;
+	background-color: #E2E2E2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer div
+{
+	text-align: center;
+	width: 90%;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: #BEBEBE;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px)
+{
+	/* HEADER */ 
+	header
+	{
+		z-index: 999;
+		height: 7vh;
+		width: 100%;
+		background-color: white;
+		box-shadow: 0 5px 10px #E2E2E2;
+		position: sticky; /* Bloquer le menu une fois passé l'accueil*/
+		top: 0;
+	}
+
+	header nav, header ul, header li, header a
+	{
+		height: 100%;
+	}
+
+	header ul
+	{
+		margin:0 5%;
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	header li
+	{
+		flex: 1;
+	}
+
+	header a
+	{
+		height: 100%;
+		width: 100%;
+		text-decoration: none;
+		color: grey;
+		font-weight: 300;
+		font-size: 130%;
+		margin-right: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+/* PORTABLE */
+@media screen and (max-width: 899px)
+{
+	.brg-barres
+	{
+		width: 30px;
+		height: 4px;
+		background-color: #262626;
+
+		border-radius: 5px;
+	}
+
+	.brg-barres
+	{
+		margin-top: 4px;
+	}
+
+	#burger
+	{
+		z-index: 1000;
+
+		width: 35px;
+		height: 33px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		margin:1.3vh 1vw;
+
+		position: fixed;
+	}
+
+	header
+	{
+		display: none;
+	}
+
+	header.visible
+	{
+		z-index: 999;
+		position: fixed;
+
+		display: block;
+
+		width: 100vw;
+		height: 110vh;
+
+		margin-top: -100vh;
+		box-shadow:inset 0 0 0 20000px rgba(0,0,0, 0.9);
+	}
+
+	header nav, ul
+	{
+		height: 90%;
+		margin-top: 5vh;
+	}
+
+	header ul
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		list-style: none;
+	}
+
+	header li
+	{
+		margin-top: 1vh;
+	}
+
+	header span
+	{
+		color: white;
+		font-size: 6vh;
+	}
+
+	header a
+	{
+		text-decoration: none;
+	}
+}
