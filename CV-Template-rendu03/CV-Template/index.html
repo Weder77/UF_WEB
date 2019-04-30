@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+		
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Prénom Nom - CV</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/base.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/timeline.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet"/> 
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+		<script type="text/javascript" src="assets/js/scripts.js" async></script>
+	</head>
+	
+	<body>
+		<div id="burger" class="animOff" onclick="burger()">
+				<div class="brg-barres animOffBarre1" id="barre1"></div>
+				<div class="brg-barres animOffBarre2" id="barre2"></div>
+				<div class="brg-barres animOffBarre3" id="barre3"></div>
+		</div>
+		
+		<main>
+			<section id="accueil">
+				<div id="accueil-pres">
+					<span class="name">PRÉNOM NOM</span> <br />
+					<span class="statut">STATUT / EMPLOI</span>
+				</div>
+			</section>
+
+			<header>
+				<nav>
+					<ul>
+						<li><a href="#accueil"><span>ACCUEIL</span></a></li>
+						<li><a href="#a-propos"><span>A PROPOS</span></a></li>
+						<li><a href="#competences"><span>COMPÉTENCES</span></a></li>
+						<li><a href="#formations"><span>FORMATIONS</span></a></li>
+						<li><a href="#realisations"><span>RÉALISATIONS</span></a></li>
+						<li><a href="#contacts"><span>CONTACTS</span></a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<section id="a-propos">
+				<h2>A PROPOS DE MOI</h2>
+				<div id="presentation">
+					<img src="images/profile.png" />
+					<p class="pres-txt">
+						<span class="infos-importantes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor.</span> <br />
+						<br />
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+					</p>
+				</div>
+			</section>
+
+			<section id="competences">
+				<h2>COMPÉTENCES</h2>
+				<article>
+
+					<div class="comp">
+						<span class="nom-comp">Compétence</span>
+						<div class="skills">
+							<div class="barre-prog">
+								<div class="progression" id="prog-1">
+									<div class="prog-anim"></div>
+								</div>
+							</div>
+							<span class="pourcentage">60%</span>
+						</div>
+					</div>
+
+					<div class="comp">
+						<span class="nom-comp">Compétence</span>
+						<div class="skills">
+							<div class="barre-prog">
+								<div class="progression" id="prog-2">
+									<div class="prog-anim"></div>
+								</div>
+							</div>
+							<span class="pourcentage">20%</span>
+						</div>
+					</div>
+
+					<div class="comp">
+						<span class="nom-comp">Compétence</span>
+						<div class="skills">
+							<div class="barre-prog">
+								<div class="progression" id="prog-3">
+									<div class="prog-anim"></div>
+								</div>
+							</div>
+							<span class="pourcentage">90%</span>
+						</div>
+					</div>
+
+					<div class="comp">
+						<span class="nom-comp">Compétence</span>
+						<div class="skills">
+							<div class="barre-prog">
+								<div class="progression" id="prog-4">
+									<div class="prog-anim"></div>
+								</div>
+							</div>
+							<span class="pourcentage">30%</span>
+						</div>
+					</div>
+
+					<div class="comp">
+						<span class="nom-comp">Compétence</span>
+						<div class="skills">
+							<div class="barre-prog">
+								<div class="progression" id="prog-5">
+									<div class="prog-anim"></div>
+								</div>
+							</div>
+							<span class="pourcentage">60%</span>
+						</div>
+					</div>
+
+					<div class="comp">
+						<span class="nom-comp">Compétence</span>
+						<div class="skills">
+							<div class="barre-prog">
+								<div class="progression" id="prog-6">
+									<div class="prog-anim"></div>
+								</div>
+							</div>
+							<span class="pourcentage">75%</span>
+						</div>
+					</div>
+				
+				</article>
+			</section>
+
+			<section id="formations">
+				<h2>FORMATIONS</h2>
+				<div id="form-timeline">
+					<div class="timeline">
+						<div class="container left">
+							<div class="content">
+								<h3>Master en Latin</h3>
+								<h4>Insitut de lettre<span class="color">,</span> 2010 - 2013</h4>
+								<ul>
+									<li>Lorem ispum</li>
+									<li>consectetur adipisicing elit, sed do eiusmod</li>
+									<li>Dolor sit amet</li>
+									<li>Incididunt ut labore</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="container right">
+							<div class="content">
+								<h3>BAC culture escargots</h3>
+								<h4>Lycée Baveux<span class="color">,</span> 2008 - 2010</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor  dolore magna aliqua. Ut enim ad minim veniam.
+								</p>
+							</div>
+						</div>
+					</div> 
+				</div>
+			</section>
+
+			<section id="realisations">
+				<h2>RÉALISATIONS</h2>
+				<article>
+					<div class="rea" id="rea-1">
+						<h4>PROJET</h4>
+						<div class="rea-description">
+							Lorem ipsum dolor sit amet
+						</div>
+					</div>
+
+					<div class="rea" id="rea-2">
+						<h4>PROJET</h4>
+						<div class="rea-description">
+							Incididunt ut labore et
+						</div>
+					</div>
+
+					<div class="rea" id="rea-3">
+						<h4>PROJET</h4>
+						<div class="rea-description">
+							Excepteur sint occaecat cupidatat non proident
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<section id="contacts">
+				<h2>CONTACTS</h2>
+				<article>
+					<div id="cont-left">
+						<form method="POST" action="">
+							<input type="text" name="name" placeholder=" NOM *" class="inp-2" id="form-name" required/>
+							<input type="mail" name="email" placeholder=" Email *" class="inp-2" required/> <br />
+							<input type="text" name="entreprise" placeholder=" Société / Entreprise" class="inp-1" /> <br />
+							<input type="text" name="subject" placeholder=" Sujet *" class="inp-1" required/> <br />
+							<textarea name="message" placeholder=" Message *"></textarea> <br />
+							<button type="button" name="Envoyer">Envoyer</button>
+						</form>
+					</div>
+
+					<div id="cont-right">
+						<div>
+							<span class="name">Prénom Nom</span> <br />
+
+							<div id="contact-info">
+								<img src="images/statut.png" />
+								<span id="contact-statut">Statut</span>
+							</div>
+						</div>
+
+						<div class="contact-infos">
+							<img src="images/phone.png" />
+							<span class="phone-number">06.XX.XX.XX.XX</span>
+						</div>
+
+						<div class="contact-infos">
+							<img src="images/email.png" />
+							<span class="email">prenom.nom@mail.fr</span>
+						</div>
+
+						<div class="contact-infos">
+							<img src="images/linkedin.png" />
+							<a href="https://www.linkedin.com/" target="_blank" title="Mon profil Linkedin" class="lien-linkedin">/Linkedin</a>
+						</div>
+
+						<div class="contact-infos">
+							<img src="images/github.png" />
+							<a href="https://github.com" target="_blank" class="lien-github" title="Mon Github personnel">@GitHub</a>
+						</div>
+
+						<div class="contact-infos">
+							<img src="images/website.png" />
+							<a href="https://www.google.fr" target="_blank" class="lien-website" title="Site de critique">Google.fr</a>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<section id="dl-cv">
+				<button>TÉLÉCHARGER MON CV</button>
+			</section>
+		</main>
+
+		<footer>
+			<div>
+				© Template développé par <a href="">Grelet Théo</a> - Tous droits réservés 
+			</div>
+		</footer>
+	</body>
+</html>
