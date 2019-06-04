@@ -1,0 +1,11 @@
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-logo {
+    font-size: 10vh;
+    margin-bottom: 2vh;
+}

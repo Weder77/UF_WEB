@@ -1,0 +1,48 @@
+/* ANIMATION ICON BURGER */
+.animOnBarre1
+{
+	transform: translateY(2px) rotate(0.125turn);
+	background-color: white;
+	transition: transform 0.6s,
+				border-color 0.6s;
+}
+
+.animOnBarre2
+{
+	display: none;
+}
+
+.animOnBarre3
+{
+	transform:translateY(-6px) rotate(-0.125turn);
+	background-color: white;
+	transition: transform 0.6s,
+				background-color 0.6s;
+}
+
+#burger.animOn
+{
+	transform: rotate(0.5turn);
+	border-color:white;
+	transition: transform 0.7s,
+				border-color 1s;
+}
+
+.animOffBarre1
+{
+	transform: none;
+	transition: transform 0.6s;
+}
+
+
+.animOffBarre3
+{
+	transform:none;
+	transition: transform 0.6s;
+}
+
+#burger.animOff
+{
+	transform: none;
+	transition: transform 0.7s;
+}
