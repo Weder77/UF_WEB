@@ -1,0 +1,287 @@
+/* COLOR */
+
+:root {
+	--main-color: #00cc66;
+	--secondary-color: #505050;
+}
+
+/* BASE */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #f2f2f2;
+}
+
+h1, h2 {
+	color: #505050;
+	font-weight: 700;
+	font-size: 150%;
+	text-align: center;
+	margin: 0 0 5%;
+	padding: 25px 0px 25px 0px;
+	width: 100%;
+	border-top: 1px #E2E2E2 solid;
+	border-bottom: 1px #E2E2E2 solid;
+}
+
+h1 {
+	font-size:200%;
+}
+
+p {
+	font-size: 130%;
+}
+
+section:not(#accueil) {
+	padding-top: 3.5%;
+}
+
+/* HEADER */
+
+header a:hover {
+	color: var(--main-color);
+}
+
+.header-a-hover {
+	color: var(--main-color);
+}
+
+/* FOOTER */
+
+footer {
+	margin-top: 6%;
+	height: 80px;
+	width: 100%;
+	color: #BEBEBE;
+	background-color: #E2E2E2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer div {
+	text-align: center;
+	width: 90%;
+}
+
+footer a {
+	text-decoration: none;
+	color: #BEBEBE;
+}
+/* DESKTOP */
+@media screen and (min-width: 900px)
+{
+	/* HEADER */ 
+	header
+	{
+		z-index: 999;
+		height: 7vh;
+		width: 100%;
+		background-color: white;
+		box-shadow: 0 5px 10px #E2E2E2;
+		position: sticky; /* Bloquer le menu une fois passé l'accueil*/
+		top: 0;
+	}
+
+	header nav, header ul, header li, header a
+	{
+		height: 100%;
+	}
+
+	header ul
+	{
+		margin:0 5%;
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	header li
+	{
+		flex: 1;
+	}
+
+	header a
+	{
+		height: 100%;
+		width: 100%;
+		text-decoration: none;
+		color: grey;
+		font-weight: 300;
+		font-size: 130%;
+		margin-right: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+/* POSITION */
+
+.shw.text-center {
+	text-align: center;
+}
+
+.shw.centered {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.shw.aligned {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* CONTAINERS */
+
+.shw.full-width {
+	height: 100vh;
+	width: 100%;
+}
+
+.shw.container {
+	margin: 0 15%;
+	padding: 2%;
+}
+
+.shw.segment {
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 3px 8px 10px #cecece;
+}
+
+/* TITLES */
+
+.shw.title2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	border: none;
+	padding: 0;
+	color: #505050;
+}
+
+/* MESSAGES */
+
+.shw.message {
+	width: 100%;
+	align-items: center;
+}
+
+.shw.message .shw.error {
+	width: 90%;
+	margin: auto;
+	background-color: rgba(206, 14, 14, 0.1);
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: 10px 8px;
+}
+
+/* FORMS */
+
+.shw.field {
+	margin-bottom: 1vh;
+	padding-right: 8px;
+}
+
+.shw.fields {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 1vh;
+}
+
+.shw.input {
+	width: 100%;
+	font-size: 1em;
+	padding: 10px 0% 10px 8px;
+	border: #d3d3d3 1px solid;
+	border-radius: 5px;
+}
+
+.shw.fields .shw.input {
+	width: 46%;
+}
+
+.shw.input:focus {
+	border-color: var(--main-color);
+}
+
+button.shw {
+	margin-top: 1vh;
+}
+
+.shw.validate {
+	padding: 10px 12px;
+	;
+	background-color: var(--main-color);
+	opacity: 0.9;
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+	font-weight: 700;
+	color: white;
+}
+
+.shw.validate:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px)
+{
+	/* HEADER */ 
+	header
+	{
+		z-index: 999;
+		height: 7vh;
+		width: 100%;
+		background-color: white;
+		box-shadow: 0 5px 10px #E2E2E2;
+		position: sticky; /* Bloquer le menu une fois passé l'accueil*/
+		top: 0;
+	}
+
+	header nav, header ul, header li, header a
+	{
+		height: 100%;
+	}
+
+	header ul
+	{
+		margin:0 5%;
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	header li
+	{
+		flex: 1;
+	}
+
+	header a
+	{
+		height: 100%;
+		width: 100%;
+		text-decoration: none;
+		color: grey;
+		font-weight: 300;
+		font-size: 130%;
+		margin-right: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

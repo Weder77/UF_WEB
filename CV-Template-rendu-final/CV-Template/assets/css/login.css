@@ -1,0 +1,45 @@
+header {
+    position: fixed;
+}
+
+.login-div {
+    width: 350px;
+    min-height: 40vh;
+    padding: 1vh 2vw;
+}
+
+.login-div h2 {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.link {
+    color: var(--secondary-color);
+}
+
+.link a {
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.shw.message {
+    position: absolute;
+    margin-top: 18vh;
+}
+
+.shw.message .shw.error {
+    width: 20%;
+}
+
+.fa-logo {
+    font-size: 10vh;
+    margin-bottom: 2vh;
+}
+@media screen and (max-width: 600px)
+{
+    .login-div
+    {
+        width: 90%;
+    }
+}

@@ -1,0 +1,296 @@
+section
+{
+	text-align: center;
+}
+*
+{
+	outline: 0;
+}
+input, button
+{
+	margin-top: 1%;
+	font-size: 1.2em;
+}
+header 
+{
+	height: 30px !important;
+}
+header nav ul li a
+{
+	font-size: 1em !important;
+}
+form
+{
+	border-radius: 5px;
+}
+button
+{
+	padding: 0.5%;
+}
+body, main
+{
+	height: calc(100vh - 30px);
+	width: 100%;
+	background: white;
+}
+.container
+{
+	display: grid;
+	grid-template-columns: calc(22.5% - 10px) calc(22.5% - 5px) calc(27.5% - 5px) calc(27.5% - 10px);
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	height: calc(100% - 20px);
+	padding: 10px;
+}
+.item
+{
+	border-radius: 5px;
+	position: relative;	
+}
+.item h2
+{
+	border: none;
+	text-align: center;
+	font-size: 1.8em;
+	color: var(--main-color);
+}
+.item form textarea
+{
+	max-width: calc(100% - 10px);
+	min-width: calc(100% - 10px);
+	min-height: 100px;
+
+}
+.item form
+{
+	width: 90%;
+	position: absolute;
+	left: 50%; 
+	top: 48%;
+	transform: translate(-50%, -50%);
+}
+.item form input, form textarea
+{
+	height: 25px;
+	width: calc(100% - 10px);
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 0;
+	padding: 5px;
+	resize: none;
+	font-size: 1em;
+}
+.item form button
+{
+	width: 100%;
+	margin-top: 20px;
+}
+.item1
+{
+	background-color: #f2f2f2;
+	grid-row-start: 1;
+	grid-row-end: 7;
+	grid-column-start: 1;
+	grid-column-end: 3; 
+}
+.item2
+{
+	background-color: #f2f2f2;
+	grid-row-start: 7;
+	grid-row-end: 11;
+	grid-column-start: 1;
+	grid-column-end: 3; 
+}
+.item3
+{
+	background-color: #f2f2f2;
+	grid-row-start: 1;
+	grid-row-end: 5;
+	grid-column-start: 3;
+	grid-column-end: 4; 
+}
+.item4
+{
+ 	background-color: #f2f2f2;
+	grid-row-start: 1;
+	grid-row-end: 5;
+	grid-column-start: 4;
+	grid-column-end: 5; 
+}
+.item5
+{
+	background-color: #f2f2f2;
+	grid-row-start: 5;
+	grid-row-end: 11;
+	grid-column-start: 3;
+	grid-column-end: 5;
+
+}
+.item2 .item-contact input.left
+{
+	width: calc(40% - 13px) !important;
+}.item2 .item-contact input.right
+{
+	width: calc(60% - 13px) !important;
+}
+.item2 .item-contact
+{
+	width: 100% !important;
+}
+.item2 H1
+{
+	padding: 1% !important;
+}
+.item3 form textarea
+{
+	min-height: 40px !important;
+}
+.item3 form input
+{
+	width: calc(50% - 15px);
+}
+.project-container
+{
+	margin-top:10px;
+}
+.project-container:first-chield
+{
+	margin-top: 0;
+}
+.submit-button
+{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+}
+.submit-button input
+{
+	width: 100%;
+}
+.formation-container
+{
+	width: 50% !important;
+}
+.skills-container
+{
+	width: 50%;
+	height: 100%;
+}
+.modify
+{
+	width: calc(80%) !important;
+}
+.add
+{
+	width: calc(20% - 5px) !important;	
+}
+.skills-input-name
+{
+	width: calc(80% - 15px) !important;
+}
+.skills-input-percentage
+{
+	width: calc(20% - 15px) !important;
+}
+
+.scroll {
+	overflow-y: auto;
+	height: 55%;
+}
+
+.close-popup {
+    background-color: gray !important;
+    width: auto !important;
+    height: 30px;
+    font-size: 10px;
+    position: absolute;
+    align-self: flex-end;
+    margin: 0;
+}
+
+.popup-close {
+	display: none;
+}
+
+.popup-open {
+	z-index: 1000;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    background-color: rgba(51, 50, 50, 0.5);
+}
+
+.popup-open form input {
+	height: 25px;
+    width: calc(100% - 10px);
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    resize: none;
+    font-size: 1em;
+}
+
+.popup-content {
+	display: flex;
+	flex-direction: column;
+	height: max-content;
+    background-color: #f2f2f2;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.popup-content h2 {
+	margin: 0;
+    border: none;
+    text-align: center;
+    font-size: 1.8em;
+    color: var(--main-color);
+}
+
+.popup-open-background {
+	display: none;
+}
+
+.submit-button-popup {
+	display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1100px)
+{
+
+	.popup-open-background-main {
+		display: none;
+	}
+
+	.popup-open {
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%,rgb(0, 0, 0,0.7) 100%), url(../../images/bg-accueil.jpg) repeat 0 0;
+	}
+
+	.container
+	{
+		display: block;
+	}
+	.item
+	{
+		width: 100%;
+		height: 450px;
+		margin-top: 20px;
+	}
+	.item1
+	{
+		height: 520px;
+	}
+	.item2
+	{
+		height: 360px;
+	}
+}

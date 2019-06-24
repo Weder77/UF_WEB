@@ -1,0 +1,84 @@
+/* PORTABLE */
+@media screen and (max-width: 899px)
+{
+	.brg-barres
+	{
+		width: 30px;
+		height: 4px;
+		background-color: #262626;
+
+		border-radius: 5px;
+	}
+
+	.brg-barres
+	{
+		margin-top: 4px;
+	}
+
+	#burger
+	{
+		z-index: 1000;
+
+		width: 35px;
+		height: 33px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		margin:1.3vh 1vw;
+
+		position: fixed;
+	}
+
+	header
+	{
+		display: none;
+	}
+
+	header.visible
+	{
+		z-index: 999;
+		position: fixed;
+
+		display: block;
+
+		width: 100vw;
+		height: 110vh;
+
+		margin-top: -100vh;
+		box-shadow:inset 0 0 0 20000px rgba(0,0,0, 0.9);
+	}
+
+	header nav, ul
+	{
+		height: 90%;
+		margin-top: 5vh;
+	}
+
+	header ul
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		list-style: none;
+	}
+
+	header li
+	{
+		margin-top: 1vh;
+	}
+
+	header span
+	{
+		color: white;
+		font-size: 6vh;
+	}
+
+	header a
+	{
+		text-decoration: none;
+	}
+}
