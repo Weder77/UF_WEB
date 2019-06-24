@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-it is a school project designed over a year. The subject being imposed on us, here is what we did. The members of the group are : <br>
+It is a school project designed over a year. The subject being imposed on us, here is what we did. The members of the group are : <br>
 &nbsp;&nbsp; - GRELET Théo <br />
 &nbsp;&nbsp; - JEAN-CHARLES Dany<br />
 &nbsp;&nbsp; - LECLERC Loris (Leave on April 2nd)<br />
@@ -31,4 +31,5 @@ Project is created with:
 
 	
 ## Setup
-To run this project, you need to set yout localhost at index.html, and to execute the InstallDataBase.sql for phpmyadmin.
+This project is online here : https://www.criticlic.fr/CV/
+You can create your own online CV.
